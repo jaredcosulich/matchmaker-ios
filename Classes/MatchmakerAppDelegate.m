@@ -7,19 +7,24 @@
 //
 
 #import "MatchmakerAppDelegate.h"
+#import "GameController.h"
 
 @implementation MatchmakerAppDelegate
 
 @synthesize window;
-
+@synthesize gameController;
 
 #pragma mark -
 #pragma mark Application lifecycle
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {    
     
-    // Override point for customization after application launch.
-	
+	GameController *newGameController = [[GameController alloc] initWithNibName:@"GameController"
+                                                                      bundle:[NSBundle mainBundle]];
+    [self setGameController:newGameController];
+    [newGameController release];
+    
+    [window addSubview:[newGameController view]];
     [window makeKeyAndVisible];
 	
 	return YES;
