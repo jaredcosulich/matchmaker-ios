@@ -1,11 +1,11 @@
 ABOUT
-=====
-Matching Game for iOS
-
+  - Matching Game for iOS (iPhone only so far)
 
 RUNNING TESTS
-=============
-'rake' will run domain and UI specs
-
-If you get an error about 'PurpleSystemEventPort' when running UI specs, quit the simulator and try again.
-
+  - 'rake' will run domain and UI specs
+  - If you get an error about 'PurpleSystemEventPort' when running UI specs, quit the simulator and try again.
+  
+RUNNING THE FAKE SERVER LOCALLY
+  - 'rake server'
+  - 'http://localhost:4567' to see the available paths
+  

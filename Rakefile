@@ -62,3 +62,8 @@ task :uispecs => :build_uispecs do
 
   system_or_exit(%Q[#{File.join(build_dir("-iphonesimulator"), "#{UI_SPECS_TARGET_NAME}.app", UI_SPECS_TARGET_NAME)} -RegisterForSystemEvents]);
 end
+
+desc "Run test server"
+task :server do
+  system_or_exit "ruby FakeServer/server.rb"
+end
