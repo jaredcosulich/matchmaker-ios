@@ -1,5 +1,5 @@
 PROJECT_NAME = "Matchmaker-ios"
-CONFIGURATION = "Release"
+CONFIGURATION = "Debug"
 SPECS_TARGET_NAME = "Specs"
 UI_SPECS_TARGET_NAME = "UISpecs"
 SDK_DIR = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk"
