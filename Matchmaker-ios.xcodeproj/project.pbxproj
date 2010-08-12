@@ -12,6 +12,13 @@
 		1CA1815012146F0A00DEDDB7 /* MatchmakerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1814F12146F0A00DEDDB7 /* MatchmakerAppDelegate.m */; };
 		1CA1815412146F6700DEDDB7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA1815312146F6700DEDDB7 /* MainWindow.xib */; };
 		1CA181D712147CD300DEDDB7 /* README in Resources */ = {isa = PBXBuildFile; fileRef = 1CA181D612147CD300DEDDB7 /* README */; };
+		1CA183F4121499EE00DEDDB7 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA183E5121499EE00DEDDB7 /* MyModel.m */; };
+		1CA183F5121499EE00DEDDB7 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA183EA121499EE00DEDDB7 /* GameController.m */; };
+		1CA183F6121499EE00DEDDB7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA183EB121499EE00DEDDB7 /* main.m */; };
+		1CA183F7121499EE00DEDDB7 /* MatchmakerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA183ED121499EE00DEDDB7 /* MatchmakerAppDelegate.m */; };
+		1CA183F8121499EE00DEDDB7 /* GameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA183EF121499EE00DEDDB7 /* GameController.xib */; };
+		1CA183F9121499EE00DEDDB7 /* MainWindow.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA183F0121499EE00DEDDB7 /* MainWindow.xib */; };
+		1CA183FA121499EE00DEDDB7 /* MyView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA183F3121499EE00DEDDB7 /* MyView.m */; };
 		AE26662B11EFB89800EE18BD /* MyModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26662A11EFB89800EE18BD /* MyModelSpec.m */; };
 		AE26663311EFB93400EE18BD /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26663211EFB93400EE18BD /* MyModel.m */; };
 		AE26667711EFBAB100EE18BD /* Cedar-iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE42792411EF992A00CFF331 /* Cedar-iPhone.framework */; };
@@ -57,6 +64,18 @@
 		1CA1817A121470FB00DEDDB7 /* Matchmaker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Matchmaker.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1CA181AF1214745400DEDDB7 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		1CA181D612147CD300DEDDB7 /* README */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = README; sourceTree = "<group>"; };
+		1CA183E4121499EE00DEDDB7 /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
+		1CA183E5121499EE00DEDDB7 /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
+		1CA183E6121499EE00DEDDB7 /* Matchmaker_ios_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matchmaker_ios_Prefix.pch; sourceTree = "<group>"; };
+		1CA183E9121499EE00DEDDB7 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
+		1CA183EA121499EE00DEDDB7 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
+		1CA183EB121499EE00DEDDB7 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1CA183EC121499EE00DEDDB7 /* MatchmakerAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MatchmakerAppDelegate.h; sourceTree = "<group>"; };
+		1CA183ED121499EE00DEDDB7 /* MatchmakerAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MatchmakerAppDelegate.m; sourceTree = "<group>"; };
+		1CA183EF121499EE00DEDDB7 /* GameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameController.xib; sourceTree = "<group>"; };
+		1CA183F0121499EE00DEDDB7 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
+		1CA183F2121499EE00DEDDB7 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
+		1CA183F3121499EE00DEDDB7 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
 		32A70AAB03705E1F00C91783 /* Matchmaker_ios_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matchmaker_ios_Prefix.pch; sourceTree = "<group>"; };
 		AE26662A11EFB89800EE18BD /* MyModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModelSpec.m; sourceTree = "<group>"; };
 		AE26663111EFB93400EE18BD /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
@@ -111,6 +130,7 @@
 		08FB7794FE84155DC02AAC07 /* Matchmaker-ios */ = {
 			isa = PBXGroup;
 			children = (
+				1CA183E0121499EE00DEDDB7 /* App */,
 				1CA181D612147CD300DEDDB7 /* README */,
 				AE42775B11EF8C6700CFF331 /* App */,
 				AE42775E11EF8C6B00CFF331 /* Spec */,
@@ -156,6 +176,81 @@
 				1CA1814C12146EE700DEDDB7 /* GameController.xib */,
 			);
 			path = Resources;
+			sourceTree = "<group>";
+		};
+		1CA183E0121499EE00DEDDB7 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				1CA183E1121499EE00DEDDB7 /* Domain */,
+				1CA183E6121499EE00DEDDB7 /* Matchmaker_ios_Prefix.pch */,
+				1CA183E7121499EE00DEDDB7 /* UI */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		1CA183E1121499EE00DEDDB7 /* Domain */ = {
+			isa = PBXGroup;
+			children = (
+				1CA183E2121499EE00DEDDB7 /* Helpers */,
+				1CA183E3121499EE00DEDDB7 /* Models */,
+			);
+			path = Domain;
+			sourceTree = "<group>";
+		};
+		1CA183E2121499EE00DEDDB7 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
+		1CA183E3121499EE00DEDDB7 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CA183E4121499EE00DEDDB7 /* MyModel.h */,
+				1CA183E5121499EE00DEDDB7 /* MyModel.m */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		1CA183E7121499EE00DEDDB7 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				1CA183E8121499EE00DEDDB7 /* Controllers */,
+				1CA183EB121499EE00DEDDB7 /* main.m */,
+				1CA183EC121499EE00DEDDB7 /* MatchmakerAppDelegate.h */,
+				1CA183ED121499EE00DEDDB7 /* MatchmakerAppDelegate.m */,
+				1CA183EE121499EE00DEDDB7 /* Resources */,
+				1CA183F1121499EE00DEDDB7 /* Views */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		1CA183E8121499EE00DEDDB7 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1CA183E9121499EE00DEDDB7 /* GameController.h */,
+				1CA183EA121499EE00DEDDB7 /* GameController.m */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		1CA183EE121499EE00DEDDB7 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				1CA183EF121499EE00DEDDB7 /* GameController.xib */,
+				1CA183F0121499EE00DEDDB7 /* MainWindow.xib */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		1CA183F1121499EE00DEDDB7 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1CA183F2121499EE00DEDDB7 /* MyView.h */,
+				1CA183F3121499EE00DEDDB7 /* MyView.m */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 		AE26662C11EFB8B900EE18BD /* Domain */ = {
@@ -344,6 +439,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1CA181D712147CD300DEDDB7 /* README in Resources */,
+				1CA183F8121499EE00DEDDB7 /* GameController.xib in Resources */,
+				1CA183F9121499EE00DEDDB7 /* MainWindow.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -363,6 +460,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1CA183F4121499EE00DEDDB7 /* MyModel.m in Sources */,
+				1CA183F5121499EE00DEDDB7 /* GameController.m in Sources */,
+				1CA183F6121499EE00DEDDB7 /* main.m in Sources */,
+				1CA183F7121499EE00DEDDB7 /* MatchmakerAppDelegate.m in Sources */,
+				1CA183FA121499EE00DEDDB7 /* MyView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
