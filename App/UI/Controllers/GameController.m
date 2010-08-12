@@ -7,9 +7,15 @@
 //
 
 #import "GameController.h"
-
+#import "Seriously.h"
 
 @implementation GameController
+
+@synthesize yes;
+@synthesize no;
+@synthesize photo1;
+@synthesize photo2;
+
 
 - (IBAction)votedYes {
     NSLog(@"yessssssssssssssss!");
@@ -35,9 +41,24 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-    NSLog(@"viewDidLoad");
+    NSString *url = @"http://localhost:4567/game/new";
+    [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
+        if (error) {
+            NSLog(@"Error: %@", error);
+        }
+        else {
+            NSDictionary *first = [body objectAtIndex:0];
+            [self loadPhoto:photo1 fromUrl:[first objectForKey:@"one"]];            
+            [self loadPhoto:photo2 fromUrl:[first objectForKey:@"two"]];            
+        }
+    }];
 }
 
+- (void)loadPhoto:(UIImageView *)photo fromUrl:(NSString *)url {
+    NSData *imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: url]];
+    [photo setImage:[[UIImage alloc] initWithData: imageData]];
+    [imageData release];
+}
 
 /*
 // Override to allow orientations other than the default portrait orientation.

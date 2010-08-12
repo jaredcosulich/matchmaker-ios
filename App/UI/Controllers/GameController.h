@@ -12,12 +12,17 @@
 @interface GameController : UIViewController {
     UIButton *yes;
     UIButton *no;
+    UIImageView *photo1;
+    UIImageView *photo2;
 }
 
 @property (nonatomic,retain) IBOutlet UIButton *yes;
 @property (nonatomic,retain) IBOutlet UIButton *no;
+@property (nonatomic,retain) IBOutlet UIImageView *photo1;
+@property (nonatomic,retain) IBOutlet UIImageView *photo2;
 
 - (IBAction)votedYes;
 - (IBAction)votedNo;
+- (void)loadPhoto:(UIImageView *)photo fromUrl:(NSString *)url;
 
 @end
