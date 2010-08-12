@@ -10,7 +10,14 @@
 
 
 @interface GameController : UIViewController {
-
+    UIButton *yes;
+    UIButton *no;
 }
+
+@property (nonatomic,retain) IBOutlet UIButton *yes;
+@property (nonatomic,retain) IBOutlet UIButton *no;
+
+- (IBAction)votedYes;
+- (IBAction)votedNo;
 
 @end
