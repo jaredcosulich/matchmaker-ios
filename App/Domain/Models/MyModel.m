@@ -11,7 +11,7 @@
 @implementation MyModel
 
 - (NSString *)name {
-    return @"bar";
+    return @"foo";
 }
 
 @end
