@@ -1,1 +1,11 @@
+ABOUT
+=====
 Matching Game for iOS
+
+
+RUNNING TESTS
+=============
+'rake' will run domain and UI specs
+
+If you get an error about 'PurpleSystemEventPort' when running UI specs, quit the simulator and try again.
+

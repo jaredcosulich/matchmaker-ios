@@ -27,7 +27,7 @@ describe(@"MyView", ^{
     });
 
     it(@"should have an unexpected background color", ^{
-        assertThat([view backgroundColor], equalTo([UIColor purpleColor]));
+        assertThat([view backgroundColor], equalTo([UIColor redColor]));
     });
 });
 
