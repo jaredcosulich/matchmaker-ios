@@ -74,6 +74,7 @@
 		1CA181941214714700DEDDB7 /* MainWindow.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainWindow.xib; sourceTree = "<group>"; };
 		1CA181961214714700DEDDB7 /* MyView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyView.h; sourceTree = "<group>"; };
 		1CA181971214714700DEDDB7 /* MyView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyView.m; sourceTree = "<group>"; };
+		1CA181AF1214745400DEDDB7 /* Rakefile */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = Rakefile; sourceTree = "<group>"; };
 		32A70AAB03705E1F00C91783 /* Matchmaker_ios_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matchmaker_ios_Prefix.pch; sourceTree = "<group>"; };
 		AE26662A11EFB89800EE18BD /* MyModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModelSpec.m; sourceTree = "<group>"; };
 		AE26663111EFB93400EE18BD /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
@@ -135,6 +136,7 @@
 				1AB674ADFE9D54B511CA2CBB /* Products */,
 				AE4279BC11EFB65000CFF331 /* UISpecs-Info.plist */,
 				1CA1815B12146F8B00DEDDB7 /* Matchmaker-Info.plist */,
+				1CA181AF1214745400DEDDB7 /* Rakefile */,
 			);
 			name = "Matchmaker-ios";
 			sourceTree = "<group>";
