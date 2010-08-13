@@ -64,7 +64,7 @@
 					<object class="IBUIButton" id="274620982">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{20, 416}, {137, 37}}</string>
+						<string key="NSFrame">{{20, 423}, {137, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -93,7 +93,7 @@
 					<object class="IBUIButton" id="286138038">
 						<reference key="NSNextResponder" ref="191373211"/>
 						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{165, 416}, {135, 37}}</string>
+						<string key="NSFrame">{{165, 423}, {135, 37}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIOpaque">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -111,8 +111,8 @@
 					</object>
 					<object class="IBUIImageView" id="746202725">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrameSize">{320, 200}</string>
+						<int key="NSvFlags">306</int>
+						<string key="NSFrame">{{20, 31}, {280, 187}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<object class="NSColor" key="IBUIBackgroundColor">
 							<int key="NSColorSpace">1</int>
@@ -123,8 +123,8 @@
 					</object>
 					<object class="IBUIImageView" id="789538532">
 						<reference key="NSNextResponder" ref="191373211"/>
-						<int key="NSvFlags">292</int>
-						<string key="NSFrame">{{0, 199.5}, {320, 200}}</string>
+						<int key="NSvFlags">282</int>
+						<string key="NSFrame">{{20, 228}, {280, 187}}</string>
 						<reference key="NSSuperview" ref="191373211"/>
 						<bool key="IBUIUserInteractionEnabled">NO</bool>
 						<string key="targetRuntimeIdentifier">IBCocoaTouchFramework</string>
@@ -213,11 +213,11 @@
 						<reference key="object" ref="191373211"/>
 						<object class="NSMutableArray" key="children">
 							<bool key="EncodedWithXMLCoder">YES</bool>
-							<reference ref="746202725"/>
-							<reference ref="789538532"/>
 							<reference ref="274620982"/>
 							<reference ref="286138038"/>
 							<reference ref="748272999"/>
+							<reference ref="746202725"/>
+							<reference ref="789538532"/>
 						</object>
 						<reference key="parent" ref="0"/>
 					</object>

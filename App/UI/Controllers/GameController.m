@@ -71,11 +71,25 @@
 }
 
 - (void)loadPhoto:(UIImageView *)photo fromUrl:(NSString *)url {
-    NSString *resizedUrl = [NSString stringWithFormat:@"http://img.lightspun.com/?src=%@&resize=320x200&shape=pad&background=ffffff&key=89593a47-3df0-41b1-b1b8-a4c3f1b3d58d", [Seriously escapeQueryParam: url]];
-    NSLog(@"resizedUrl: %@", resizedUrl);
+    [self automaticallySetScaleFactorOf:photo];
+    
+    int width = photo.bounds.size.width * photo.contentScaleFactor;
+    int height = photo.bounds.size.height * photo.contentScaleFactor;
+    
+    NSString *resizedUrl = [NSString stringWithFormat:@"http://img.lightspun.com/?src=%@&resize=%dx%d&shape=pad&background=ffffff&key=89593a47-3df0-41b1-b1b8-a4c3f1b3d58d", 
+                                                      [Seriously escapeQueryParam: url], width, height];
     NSData *imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: resizedUrl]];
-    [photo setImage:[UIImage imageWithData: imageData]];
+    UIImage *image = [UIImage imageWithData: imageData];
+    [photo setImage:image];
     [imageData release];
+}
+
+- (void)automaticallySetScaleFactorOf:(UIImageView *)imageView {
+    UIScreen *screen = [UIScreen mainScreen];
+    if ([screen respondsToSelector:@selector(scale)] &&
+        [imageView respondsToSelector:@selector(setContentScaleFactor:)]) {
+        [imageView setContentScaleFactor:[screen scale]];
+    }
 }
 
 /*
