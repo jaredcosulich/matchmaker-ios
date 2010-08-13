@@ -269,7 +269,9 @@
 					<string>-2.CustomClassName</string>
 					<string>1.IBEditorWindowLastContentRect</string>
 					<string>1.IBPluginDependency</string>
+					<string>15.CustomClassName</string>
 					<string>15.IBPluginDependency</string>
+					<string>16.CustomClassName</string>
 					<string>16.IBPluginDependency</string>
 					<string>19.IBPluginDependency</string>
 					<string>8.IBPluginDependency</string>
@@ -281,7 +283,9 @@
 					<string>UIResponder</string>
 					<string>{{940, 247}, {320, 480}}</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>PhotoView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
+					<string>PhotoView</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
 					<string>com.apple.InterfaceBuilder.IBCocoaTouchPlugin</string>
@@ -356,8 +360,8 @@
 						<object class="NSMutableArray" key="dict.values">
 							<bool key="EncodedWithXMLCoder">YES</bool>
 							<string>UIButton</string>
-							<string>UIImageView</string>
-							<string>UIImageView</string>
+							<string>PhotoView</string>
+							<string>PhotoView</string>
 							<string>UIButton</string>
 						</object>
 					</object>
@@ -378,11 +382,11 @@
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">photo1</string>
-								<string key="candidateClassName">UIImageView</string>
+								<string key="candidateClassName">PhotoView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">photo2</string>
-								<string key="candidateClassName">UIImageView</string>
+								<string key="candidateClassName">PhotoView</string>
 							</object>
 							<object class="IBToOneOutletInfo">
 								<string key="name">yes</string>
@@ -393,6 +397,14 @@
 					<object class="IBClassDescriptionSource" key="sourceIdentifier">
 						<string key="majorKey">IBProjectSource</string>
 						<string key="minorKey">App/UI/Controllers/GameController.h</string>
+					</object>
+				</object>
+				<object class="IBPartialClassDescription">
+					<string key="className">PhotoView</string>
+					<string key="superclassName">UIImageView</string>
+					<object class="IBClassDescriptionSource" key="sourceIdentifier">
+						<string key="majorKey">IBProjectSource</string>
+						<string key="minorKey">App/Domain/Helpers/PhotoView.h</string>
 					</object>
 				</object>
 			</object>
