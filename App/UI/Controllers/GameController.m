@@ -15,16 +15,23 @@
 @synthesize no;
 @synthesize photo1;
 @synthesize photo2;
-
+@synthesize data;
 
 - (IBAction)votedYes {
-    NSLog(@"yessssssssssssssss!");
+    if (currentItem == [data count] - 1) {
+        NSLog(@"done!");
+    } else {
+        [self showNextPhoto];
+    }
 }
 
 - (IBAction)votedNo {
-    NSLog(@"nooooooooooooo!");
+    if (currentItem == [data count] - 1) {
+        NSLog(@"done!");
+    } else {
+        [self showNextPhoto];
+    }
 }
-
 
 /*
  // The designated initializer.  Override if you create the controller programmatically and want to perform customization that is not appropriate for viewDidLoad.
@@ -36,22 +43,31 @@
 }
 */
 
-
 // Implement viewDidLoad to do additional setup after loading the view, typically from a nib.
 - (void)viewDidLoad {
     [super viewDidLoad];
-
+        
     NSString *url = @"http://localhost:4567/game/new";
+    
     [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
         if (error) {
             NSLog(@"Error: %@", error);
         }
         else {
-            NSDictionary *first = [body objectAtIndex:0];
-            [self loadPhoto:photo1 fromUrl:[first objectForKey:@"one"]];            
-            [self loadPhoto:photo2 fromUrl:[first objectForKey:@"two"]];            
+            [body retain];
+            data = body;
+            currentItem = -1;
+            [self showNextPhoto];
         }
     }];
+}
+
+- (void)showNextPhoto {
+    currentItem++;
+    
+    NSDictionary *item = [data objectAtIndex:currentItem];
+    [self loadPhoto:photo1 fromUrl:[item objectForKey:@"one"]];
+    [self loadPhoto:photo2 fromUrl:[item objectForKey:@"two"]];
 }
 
 - (void)loadPhoto:(UIImageView *)photo fromUrl:(NSString *)url {
@@ -79,11 +95,16 @@
     [super viewDidUnload];
     // Release any retained subviews of the main view.
     // e.g. self.myOutlet = nil;
+    self.photo1 = nil;
+    self.photo2 = nil;
+    self.yes = nil;
+    self.no = nil;
 }
 
 
 - (void)dealloc {
     [super dealloc];
+    [data release];
 }
 
 
