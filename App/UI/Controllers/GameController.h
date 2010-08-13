@@ -26,8 +26,6 @@
 
 - (IBAction)votedYes;
 - (IBAction)votedNo;
-- (void)loadPhoto:(UIImageView *)photo fromUrl:(NSString *)url;
 - (void)showNextPhoto;
-- (void)automaticallySetScaleFactorOf:(UIImageView *)imageView;
 
 @end

@@ -8,6 +8,7 @@
 
 #import "PhotoView.h"
 #import "Seriously.h"
+#import "Lightspun.h"
 
 @implementation PhotoView
 
@@ -25,12 +26,12 @@
     int width = self.bounds.size.width * self.contentScaleFactor;
     int height = self.bounds.size.height * self.contentScaleFactor;
     
-    NSString *resizedUrl = [NSString stringWithFormat:@"http://img.lightspun.com/?src=%@&resize=%dx%d&shape=pad&background=ffffff&key=89593a47-3df0-41b1-b1b8-a4c3f1b3d58d", 
-                            [Seriously escapeQueryParam: url], width, height];
-    NSData *imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: resizedUrl]];
-    UIImage *image = [UIImage imageWithData: imageData];
-    [self setImage:image];
-    [imageData release];
+    [self setImage:[Lightspun imageFromUrl:url 
+                                     width:width 
+                                    height:height 
+                                     shape:@"pad" 
+                                background:@"ffffff"
+                                       key:@"89593a47-3df0-41b1-b1b8-a4c3f1b3d58d"]];    
 }
 
 - (void)autoscale {
