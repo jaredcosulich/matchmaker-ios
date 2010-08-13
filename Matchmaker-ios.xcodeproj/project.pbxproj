@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1C8134281214BA8F00407744 /* GameControllerSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1C8134271214BA8F00407744 /* GameControllerSpec.m */; };
 		1CA1814B12146ED000DEDDB7 /* GameController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1814A12146ED000DEDDB7 /* GameController.m */; };
 		1CA1814D12146EE700DEDDB7 /* GameController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1CA1814C12146EE700DEDDB7 /* GameController.xib */; };
 		1CA1815012146F0A00DEDDB7 /* MatchmakerAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CA1814F12146F0A00DEDDB7 /* MatchmakerAppDelegate.m */; };
@@ -75,6 +76,7 @@
 
 /* Begin PBXFileReference section */
 		08FB779EFE84155DC02AAC07 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
+		1C8134271214BA8F00407744 /* GameControllerSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameControllerSpec.m; sourceTree = "<group>"; };
 		1CA1814912146ED000DEDDB7 /* GameController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameController.h; sourceTree = "<group>"; };
 		1CA1814A12146ED000DEDDB7 /* GameController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameController.m; sourceTree = "<group>"; };
 		1CA1814C12146EE700DEDDB7 /* GameController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GameController.xib; sourceTree = "<group>"; };
@@ -230,6 +232,14 @@
 				1CA1817A121470FB00DEDDB7 /* Matchmaker.app */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		1C8134261214BA6500407744 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1C8134271214BA8F00407744 /* GameControllerSpec.m */,
+			);
+			path = Controllers;
 			sourceTree = "<group>";
 		};
 		1CA180F112138A1100DEDDB7 /* Helpers */ = {
@@ -538,6 +548,7 @@
 		AE42797411EFB1D500CFF331 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1C8134261214BA6500407744 /* Controllers */,
 				AE42797711EFB2FD00CFF331 /* Views */,
 				AE4279F411EFB7A000CFF331 /* main.m */,
 			);
@@ -740,6 +751,7 @@
 				1CAC77E21214AE300037891B /* Seriously.m in Sources */,
 				1CAC77E31214AE300037891B /* SeriouslyOperation.m in Sources */,
 				1CAC77E41214AE300037891B /* SeriouslyXML.m in Sources */,
+				1C8134281214BA8F00407744 /* GameControllerSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -919,6 +931,7 @@
 					"\"$(SRCROOT)/Externals\"",
 				);
 				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_INPUT_FILETYPE = sourcecode.c.objc;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SYSTEM_LIBRARY_DIR)/Frameworks/UIKit.framework/Headers/UIKit.h";
 				INFOPLIST_FILE = "UISpecs-Info.plist";

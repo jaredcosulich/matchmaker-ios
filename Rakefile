@@ -1,5 +1,5 @@
 PROJECT_NAME = "Matchmaker-ios"
-CONFIGURATION = "Debug"
+CONFIGURATION = "Release"
 SPECS_TARGET_NAME = "Specs"
 UI_SPECS_TARGET_NAME = "UISpecs"
 SDK_DIR = "/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator4.0.sdk"
@@ -25,6 +25,7 @@ task :cruise do
   Rake::Task[:uispecs].invoke
 end
 
+desc "Clean everything"
 task :clean do
   stdout = File.join(ENV['CC_BUILD_ARTIFACTS'], "clean.output") if (ENV['IS_CI_BOX'])
   system_or_exit(%Q[xcodebuild -project #{PROJECT_NAME}.xcodeproj -alltargets -configuration #{CONFIGURATION} clean], stdout)

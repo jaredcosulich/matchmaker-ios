@@ -56,7 +56,7 @@
 
 - (void)loadPhoto:(UIImageView *)photo fromUrl:(NSString *)url {
     NSData *imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: url]];
-    [photo setImage:[[UIImage alloc] initWithData: imageData]];
+    [photo setImage:[UIImage imageWithData: imageData]];
     [imageData release];
 }
 
