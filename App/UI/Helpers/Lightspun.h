@@ -13,7 +13,7 @@
 
 }
 
-+ (UIImage *)imageFromUrl:(NSString *)url width:(int)width height:(int)height shape:(NSString *)shape background:(NSString *)background key:(NSString *)key;
++ (NSString *)resize:(NSString *)url width:(int)width height:(int)height shape:(NSString *)shape background:(NSString *)background key:(NSString *)key;
 + (NSString *)escape:(NSString *)url;
-
+    
 @end

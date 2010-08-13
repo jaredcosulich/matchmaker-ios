@@ -46,6 +46,7 @@
 		1CB0F292121600BD003C2DA5 /* PhotoView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0F290121600BD003C2DA5 /* PhotoView.m */; };
 		1CB0F2DA1216049C003C2DA5 /* Lightspun.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0F2D91216049C003C2DA5 /* Lightspun.m */; };
 		1CB0F2DB1216049C003C2DA5 /* Lightspun.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0F2D91216049C003C2DA5 /* Lightspun.m */; };
+		1CB0F2E212160647003C2DA5 /* LightspunSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0F2E112160647003C2DA5 /* LightspunSpec.m */; };
 		AE26662B11EFB89800EE18BD /* MyModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26662A11EFB89800EE18BD /* MyModelSpec.m */; };
 		AE26663311EFB93400EE18BD /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26663211EFB93400EE18BD /* MyModel.m */; };
 		AE26667711EFBAB100EE18BD /* Cedar-iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE42792411EF992A00CFF331 /* Cedar-iPhone.framework */; };
@@ -164,6 +165,7 @@
 		1CB0F290121600BD003C2DA5 /* PhotoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotoView.m; sourceTree = "<group>"; };
 		1CB0F2D81216049C003C2DA5 /* Lightspun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lightspun.h; sourceTree = "<group>"; };
 		1CB0F2D91216049C003C2DA5 /* Lightspun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lightspun.m; sourceTree = "<group>"; };
+		1CB0F2E112160647003C2DA5 /* LightspunSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LightspunSpec.m; sourceTree = "<group>"; };
 		32A70AAB03705E1F00C91783 /* Matchmaker_ios_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matchmaker_ios_Prefix.pch; sourceTree = "<group>"; };
 		AE26662A11EFB89800EE18BD /* MyModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModelSpec.m; sourceTree = "<group>"; };
 		AE26663111EFB93400EE18BD /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
@@ -510,6 +512,14 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		1CB0F2E012160623003C2DA5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1CB0F2E112160647003C2DA5 /* LightspunSpec.m */,
+			);
+			path = Helpers;
+			sourceTree = "<group>";
+		};
 		AE26662C11EFB8B900EE18BD /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -565,6 +575,7 @@
 		AE42797411EFB1D500CFF331 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				1CB0F2E012160623003C2DA5 /* Helpers */,
 				1C8134261214BA6500407744 /* Controllers */,
 				AE42797711EFB2FD00CFF331 /* Views */,
 				AE4279F411EFB7A000CFF331 /* main.m */,
@@ -776,6 +787,7 @@
 				1C8134281214BA8F00407744 /* GameControllerSpec.m in Sources */,
 				1CB0F291121600BD003C2DA5 /* PhotoView.m in Sources */,
 				1CB0F2DB1216049C003C2DA5 /* Lightspun.m in Sources */,
+				1CB0F2E212160647003C2DA5 /* LightspunSpec.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

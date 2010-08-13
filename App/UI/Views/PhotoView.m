@@ -22,16 +22,13 @@
 
 - (void)load:(NSString *)url {
     [self autoscale];
-    
-    int width = self.bounds.size.width * self.contentScaleFactor;
-    int height = self.bounds.size.height * self.contentScaleFactor;
-    
-    [self setImage:[Lightspun imageFromUrl:url 
-                                     width:width 
-                                    height:height 
-                                     shape:@"pad" 
-                                background:@"ffffff"
-                                       key:@"89593a47-3df0-41b1-b1b8-a4c3f1b3d58d"]];    
+            
+    [self setImage:[self imageFromUrl:[Lightspun resize:url 
+                                                  width:[self actualWidth]
+                                                 height:[self actualHeight]
+                                                  shape:@"pad"
+                                             background:@"ffffff"
+                                                    key:@"89593a47-3df0-41b1-b1b8-a4c3f1b3d58d"]]];
 }
 
 - (void)autoscale {
@@ -40,6 +37,21 @@
         [self respondsToSelector:@selector(setContentScaleFactor:)]) {
         [self setContentScaleFactor:[screen scale]];
     }
+}
+
+- (UIImage *)imageFromUrl:(NSString *)url {
+    NSData *imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: url]];
+    UIImage *image = [UIImage imageWithData: imageData];
+    [imageData release];
+    return image;
+}  
+
+- (int)actualWidth {
+    return self.bounds.size.width * self.contentScaleFactor;
+}
+
+- (int)actualHeight {
+    return self.bounds.size.height * self.contentScaleFactor;
 }
 
 - (void)dealloc {

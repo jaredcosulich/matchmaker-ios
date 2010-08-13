@@ -15,5 +15,8 @@
 
 - (void)load:(NSString *)url;
 - (void)autoscale;
-
+- (UIImage *)imageFromUrl:(NSString *)url;
+- (int)actualWidth;
+- (int)actualHeight;
+    
 @end
