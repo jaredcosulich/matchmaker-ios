@@ -71,7 +71,9 @@
 }
 
 - (void)loadPhoto:(UIImageView *)photo fromUrl:(NSString *)url {
-    NSData *imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: url]];
+    NSString *resizedUrl = [NSString stringWithFormat:@"http://img.lightspun.com/?src=%@&resize=320x200&shape=pad&background=ffffff&key=89593a47-3df0-41b1-b1b8-a4c3f1b3d58d", [Seriously escapeQueryParam: url]];
+    NSLog(@"resizedUrl: %@", resizedUrl);
+    NSData *imageData = [[NSData alloc] initWithContentsOfURL: [NSURL URLWithString: resizedUrl]];
     [photo setImage:[UIImage imageWithData: imageData]];
     [imageData release];
 }
