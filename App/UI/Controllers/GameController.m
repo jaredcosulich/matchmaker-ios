@@ -49,7 +49,8 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
         
-    NSString *url = @"http://localhost:4567/game/new";
+    //NSString *url = @"http://localhost:4567/game/new";
+    NSString *url = @"http://staging.thematchinggame.com/games/new?count=5";
     
     [Seriously get:url handler:^(id body, NSHTTPURLResponse *response, NSError *error) {
         if (error) {
