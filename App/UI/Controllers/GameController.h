@@ -8,24 +8,24 @@
 
 #import <UIKit/UIKit.h>
 #import "PhotoView.h"
+#import "Game.h"
 
 @interface GameController : UIViewController {
     UIButton *yes;
     UIButton *no;
     PhotoView *photo1;
     PhotoView *photo2;
-    NSArray *data;
-    int currentItem;
+    Game *game;
 }
 
 @property (nonatomic,retain) IBOutlet UIButton *yes;
 @property (nonatomic,retain) IBOutlet UIButton *no;
 @property (nonatomic,retain) IBOutlet PhotoView *photo1;
 @property (nonatomic,retain) IBOutlet PhotoView *photo2;
-@property (nonatomic, assign) NSArray *data;
+@property (nonatomic,retain) Game *game;
 
 - (IBAction)votedYes;
 - (IBAction)votedNo;
-- (void)showNextPhoto;
+- (void)showPhotos;
 
 @end

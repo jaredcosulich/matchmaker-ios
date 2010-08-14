@@ -15,21 +15,23 @@
 @synthesize no;
 @synthesize photo1;
 @synthesize photo2;
-@synthesize data;
+@synthesize game;
 
 - (IBAction)votedYes {
-    if (currentItem == [data count] - 1) {
+    if ([game isOver]) {
         NSLog(@"done!");
     } else {
-        [self showNextPhoto];
+        [game next];
+        [self showPhotos];
     }
 }
 
 - (IBAction)votedNo {
-    if (currentItem == [data count] - 1) {
+    if ([game isOver]) {
         NSLog(@"done!");
     } else {
-        [self showNextPhoto];
+        [game next];
+        [self showPhotos];
     }
 }
 
@@ -54,20 +56,15 @@
             NSLog(@"Error: %@", error);
         }
         else {
-            [body retain];
-            data = body;
-            currentItem = -1;
-            [self showNextPhoto];
+            game = [[Game alloc] initWithData:body];
+            [self showPhotos];
         }
     }];
 }
 
-- (void)showNextPhoto {
-    currentItem++;
-    
-    NSDictionary *item = [data objectAtIndex:currentItem];
-    [photo1 load:[item objectForKey:@"one"]];
-    [photo2 load:[item objectForKey:@"two"]];    
+- (void)showPhotos {
+    [photo1 load:[game url1]];
+    [photo2 load:[game url2]];
 }
 
 /*
@@ -98,7 +95,7 @@
 
 - (void)dealloc {
     [super dealloc];
-    [data release];
+    [game release];
 }
 
 
