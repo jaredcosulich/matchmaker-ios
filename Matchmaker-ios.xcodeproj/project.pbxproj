@@ -50,6 +50,9 @@
 		1CB0F33C12161422003C2DA5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0F33B12161422003C2DA5 /* Game.m */; };
 		1CB0F33D12161422003C2DA5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0F33B12161422003C2DA5 /* Game.m */; };
 		1CB0F37012161A86003C2DA5 /* GameSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0F36F12161A86003C2DA5 /* GameSpec.m */; };
+		1CB0F3AD12162402003C2DA5 /* Game.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0F3AA12162402003C2DA5 /* Game.m */; };
+		1CB0F3AE12162402003C2DA5 /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0F3AC12162402003C2DA5 /* MyModel.m */; };
+		1CB0F3B21216240F003C2DA5 /* Lightspun.m in Sources */ = {isa = PBXBuildFile; fileRef = 1CB0F3B11216240F003C2DA5 /* Lightspun.m */; };
 		AE26662B11EFB89800EE18BD /* MyModelSpec.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26662A11EFB89800EE18BD /* MyModelSpec.m */; };
 		AE26663311EFB93400EE18BD /* MyModel.m in Sources */ = {isa = PBXBuildFile; fileRef = AE26663211EFB93400EE18BD /* MyModel.m */; };
 		AE26667711EFBAB100EE18BD /* Cedar-iPhone.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = AE42792411EF992A00CFF331 /* Cedar-iPhone.framework */; };
@@ -172,6 +175,12 @@
 		1CB0F33A12161422003C2DA5 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
 		1CB0F33B12161422003C2DA5 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
 		1CB0F36F12161A86003C2DA5 /* GameSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GameSpec.m; sourceTree = "<group>"; };
+		1CB0F3A912162402003C2DA5 /* Game.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Game.h; sourceTree = "<group>"; };
+		1CB0F3AA12162402003C2DA5 /* Game.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Game.m; sourceTree = "<group>"; };
+		1CB0F3AB12162402003C2DA5 /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
+		1CB0F3AC12162402003C2DA5 /* MyModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModel.m; sourceTree = "<group>"; };
+		1CB0F3B01216240F003C2DA5 /* Lightspun.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Lightspun.h; sourceTree = "<group>"; };
+		1CB0F3B11216240F003C2DA5 /* Lightspun.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Lightspun.m; sourceTree = "<group>"; };
 		32A70AAB03705E1F00C91783 /* Matchmaker_ios_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Matchmaker_ios_Prefix.pch; sourceTree = "<group>"; };
 		AE26662A11EFB89800EE18BD /* MyModelSpec.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyModelSpec.m; sourceTree = "<group>"; };
 		AE26663111EFB93400EE18BD /* MyModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyModel.h; sourceTree = "<group>"; };
@@ -226,6 +235,8 @@
 		08FB7794FE84155DC02AAC07 /* Matchmaker-ios */ = {
 			isa = PBXGroup;
 			children = (
+				1CB0F3AF1216240F003C2DA5 /* Helpers */,
+				1CB0F3A812162402003C2DA5 /* Models */,
 				1CAC77B81214AE300037891B /* Vendor */,
 				1CA183E0121499EE00DEDDB7 /* App */,
 				1CA181D612147CD300DEDDB7 /* README */,
@@ -533,6 +544,28 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
+		1CB0F3A812162402003C2DA5 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1CB0F3A912162402003C2DA5 /* Game.h */,
+				1CB0F3AA12162402003C2DA5 /* Game.m */,
+				1CB0F3AB12162402003C2DA5 /* MyModel.h */,
+				1CB0F3AC12162402003C2DA5 /* MyModel.m */,
+			);
+			name = Models;
+			path = App/Domain/Models;
+			sourceTree = "<group>";
+		};
+		1CB0F3AF1216240F003C2DA5 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1CB0F3B01216240F003C2DA5 /* Lightspun.h */,
+				1CB0F3B11216240F003C2DA5 /* Lightspun.m */,
+			);
+			name = Helpers;
+			path = App/Domain/Helpers;
+			sourceTree = "<group>";
+		};
 		AE26662C11EFB8B900EE18BD /* Domain */ = {
 			isa = PBXGroup;
 			children = (
@@ -808,6 +841,9 @@
 				1CAC77E41214AE300037891B /* SeriouslyXML.m in Sources */,
 				1C8134281214BA8F00407744 /* GameControllerSpec.m in Sources */,
 				1CB0F291121600BD003C2DA5 /* PhotoView.m in Sources */,
+				1CB0F3AD12162402003C2DA5 /* Game.m in Sources */,
+				1CB0F3AE12162402003C2DA5 /* MyModel.m in Sources */,
+				1CB0F3B21216240F003C2DA5 /* Lightspun.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
